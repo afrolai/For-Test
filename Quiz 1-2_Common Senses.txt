@@ -1,0 +1,30 @@
+Quiz 1-2: Common Senses
+˙When will we use F1-score instead of precision(accuracy)?
+  Answer:
+  
+
+˙Why don’t we use binary classification function as the activation function in neural networks?
+  Answer:
+  
+
+˙What is the bias and variance of a machine learning algorithm?
+  Answer:
+  Bias即所謂的Underfitting，是因為參數過少連Training set都會產生頗大的預測誤差，
+  而Variance即所謂的Overfitting，是因為參數過多導致過度符合Training set的資料特性，
+  使得其無法預測較為普遍的資料集。
+
+˙When training a single tree in random forest, we don’t prune the tree, why?
+  Answer:
+  因為prune主要是用以避免過度擬合，而random forest通常不會過度擬合，且在每個各別的tree已經bagging，
+  所以在此情況下無須prune。
+
+˙What is one-hot encoding?
+  Answer:
+  one-hot encoding是使用categorical variables去轉換為binary vectors，
+  且categorical variables須為整數值，而使提供給ML在預測中做得更好。
+
+˙How to prevent overfitting in neural networks? (write down anything you know)
+  Answer:
+  可以使用regularization方法。它是加額外項目在大權重來修改我們最小化的objective function。
+  意思是，我們改變objective function，使其變為Error +λf（θ)
+  此外，也可以用Dropoutz方法，主要提供使用有效地近似組合指數方法來防止過度擬合。
